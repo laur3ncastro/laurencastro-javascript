@@ -83,6 +83,41 @@
     let name03 = makeName ("Amiah", "Marie", "Sanchez");
     console.log(name03);
 
-  </script>
-</body>
+    // Just a log to show in our Console
+console.log("Making a better name function:");
+
+    // A better name function to fix middle initials
+    function makeBetterName(firstName, middleName, lastName) {
+    let fullName = firstName + " " + middleName + " " + lastName;
+    return fullName;
+  } 
+  console.log(makeBetterName("Joan", "Marie", "Larkin"));
+  console.log(makeBetterName("John", "F", "Kennedy"));
+
+    // Make a name with middle initial
+    function makeBetterName(firstName, middleName, lastName) {
+    if (middleName.length === 1) {
+    // adding and updating here
+    middleName = middleName + ".";
+  }
+  let fullName = firstName + " " + middleName + " " + lastName;
+  return fullName;
+  }
+
+    //Print who won in soccer matchgi
+    function scoreCompare(home, away) {
+      if (home > away) {
+      return "Home team wins!";
+      }  else if (home < away) {
+      return "Away team wins :(";
+      } else {
+      return "It's a tie!";
+    }}
+
+  console.log(scoreCompare(5,3));
+  console.log(scoreCompare(3,5));
+  console.log(scoreCompare(3,3));
+
+    </script>
+  </body>
 </html>
